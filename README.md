@@ -1,5 +1,6 @@
 ![](2020-12-13-17-59-59.png)
 
+![](ScreenShot.png)
 This is an application created with ReactJS. This projects demonstrates the understanding of props, states, Components, JSX, AJAX, and JavaScript(ECMAScript) 6.
 
 Here is how you can load the application onto your local machine:
