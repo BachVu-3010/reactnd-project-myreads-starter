@@ -3,13 +3,9 @@ This is an application created with ReactJS. This projects demonstrates the unde
 
 Here is how you can load the application onto your local machine:
 
-First, install node.js if you do not have it yet. It comes with npm(node package manage). Make sure that you install node with the PATH variable so you can run node anywhere in your command prompt/terminal.
+To start the react app, following these simple two steps:
 
-Once node.js is installed, install the react package using this command: npm install -g create-react-app
+1. Install dependencies: npm install
+2. npm start
 
-The environment is now ready. After installing the react package, you can either clone this repo or download it as a zip. if you download this as a zip, you will have to extract the files.
-
-In your command prompt/terminal, change directory to the project root(where you cloned/extracted the repo).
-
-To start the react app, run this command: npm start
 This will start the app in your default browser at: localhost:3000
