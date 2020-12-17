@@ -1,14 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import * as BooksAPI from "./BooksAPI";
 
 import Book from "./Book";
 
-class BookPage extends React.Component {
+class BookPage extends Component {
   state = {
     book: null,
-    popmsg: "",
-    popmsgdisplay: "none",
     showLoading: "none",
   };
 
@@ -40,7 +38,6 @@ class BookPage extends React.Component {
                 <ol className="books-grid">
                   {this.state.book && (
                     <Book
-                      showPopMSG={this.showPopMSG}
                       book={book}
                       shelf={book.shelf}
                       key={book.id}

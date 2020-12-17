@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Book from "./Book";
 
 import * as BooksAPI from "./BooksAPI";
@@ -49,7 +49,10 @@ class Search extends Component {
   refreshResults(book, shelf) {
     this.setState(() => {
       const index = this.state.results.indexOf(book);
-      this.state.results[index].shelf = shelf;
+      let temp = this.state.results;
+      temp[index].shelf = shelf;
+      // this.state.results[index].shelf = shelf;
+      this.setState({ results: temp });
     });
   }
 
